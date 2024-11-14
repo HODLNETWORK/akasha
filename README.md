@@ -6,9 +6,8 @@ https://github.com/user-attachments/assets/cbd6bf60-0c5b-46ec-8e75-87f51a51bf3f
 
 
 
-#<p align="center">
- ⚡Akasha⚡ Unchained Potential, Redefined Freedom. 
-</p>
+# ⚡Akasha⚡ Unchained Potential, Redefined Freedom. 
+
 
 ## Overview
 Technical implementation of the Akasha token bridge between Base and other networks using LayerZero's OFT (Omnichain Fungible Token) standard.
