@@ -1,0 +1,38 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.27;
+
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+
+contract AkashaSacrifice is Ownable, ReentrancyGuard {
+    IERC20 public lpToken;
+    uint256 public sacrificeEndTime;
+    uint256 public constant SACRIFICE_DURATION = 7 days;
+    
+    mapping(address => uint256) public sacrificeAmount;
+    
+    event Sacrificed(address indexed user, uint256 amount);
+    
+    constructor(address _lpToken) {
+        lpToken = IERC20(_lpToken);
+        sacrificeEndTime = block.timestamp + SACRIFICE_DURATION;
+    }
+    
+    function sacrifice(uint256 amount) external nonReentrant {
+        require(block.timestamp < sacrificeEndTime, "Sacrifice period ended");
+        require(amount > 0, "Amount must be greater than 0");
+        
+        lpToken.transferFrom(msg.sender, address(this), amount);
+        sacrificeAmount[msg.sender] += amount;
+        
+        emit Sacrificed(msg.sender, amount);
+    }
+    
+    function getMultiplier(uint256 amount) public pure returns (uint256) {
+        if (amount >= 100000e18) return 250; // 2.5x
+        if (amount >= 50000e18) return 200;  // 2.0x
+        if (amount >= 10000e18) return 150;  // 1.5x
+        return 100; // 1.0x
+    }
+} 
