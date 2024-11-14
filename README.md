@@ -6,8 +6,8 @@ https://github.com/user-attachments/assets/cbd6bf60-0c5b-46ec-8e75-87f51a51bf3f
 
 
 
-<p align="center">
-# ⚡Akasha⚡ Unchained Potential, Redefined Freedom. 
+#<p align="center">
+ ⚡Akasha⚡ Unchained Potential, Redefined Freedom. 
 </p>
 
 ## Overview
