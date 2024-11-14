@@ -1,3 +1,5 @@
+![alt text](image.png)
+
 # Akasha Cross-Chain Bridge Implementation
 
 ## Overview
@@ -56,3 +58,26 @@ npx hardhat run scripts/test-crosschain.js --network base
 1. Admin controls for pausing bridge
 2. Recovery mechanisms for stuck tokens
 3. Upgrade paths for contract improvements
+
+# AKASHA Cross-Chain Bridge
+
+Cross-chain implementation of AKASHA token using LayerZero's OFT standard, bridging Base and BSC networks.
+
+## Deployed Contracts
+- Base Adapter: `0xfED6a7d8C083c5403Ac785196900eb9a721f6E8a`
+- BSC OFT: `0xca7A227b771F0B16AA844f0972BF371B209B8D44`
+
+## Development
+bash
+npm install
+cp .env.example .env
+
+Fill in environment variables:
+- `PRIVATE_KEY`
+- `BASESCAN_API_KEY`
+- `BSCSCAN_API_KEY`
+
+## Scripts
+- Deploy: `npx hardhat run scripts/deploy-[network].js --network [network]`
+- Verify: `npx hardhat run scripts/verify-[network].js --network [network]`
+- Test: `npx hardhat test`
