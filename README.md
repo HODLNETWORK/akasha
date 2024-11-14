@@ -22,8 +22,8 @@ Technical implementation of the Akasha token bridge between Base and other netwo
   - BSC: `0x1a44076050125825900e736c501f859c50fE728c`
 
 ### Deployed Contracts
-- BSC OFT: `0xca7A227b771F0B16AA844f0972BF371B209B8D44`
-- Base Adapter: `0xfED6a7d8C083c5403Ac785196900eb9a721f6E8a`
+- BSC OFT: `0x3091B09A653526c736a01F416cB40d3F3957C8d5`
+- Base Adapter: `0xfed6a7d8c083c5403ac785196900eb9a721f6e8a`
 
 ## Development Setup
 
