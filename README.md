@@ -1,10 +1,13 @@
-  ![alt text](image-2.png)
+
+
+
+https://github.com/user-attachments/assets/75c3b1eb-a49f-49e9-b86d-0a23e2401606
 
 
 # Akasha Cross-Chain Bridge Implementation
 
 ## Overview
-Technical implementation of the Akasha token bridge between Base and BSC using LayerZero's OFT (Omnichain Fungible Token) standard.
+Technical implementation of the Akasha token bridge between Base and other networks using LayerZero's OFT (Omnichain Fungible Token) standard.
 
 ## Architecture
 
