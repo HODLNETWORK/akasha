@@ -1,10 +1,13 @@
 
 
 
-https://github.com/user-attachments/assets/75c3b1eb-a49f-49e9-b86d-0a23e2401606
+
+https://github.com/user-attachments/assets/cbd6bf60-0c5b-46ec-8e75-87f51a51bf3f
 
 
-# Akasha Cross-Chain Bridge Implementation
+
+
+# ⚡Akasha⚡ Unchained Potential, Redefined Freedom.
 
 ## Overview
 Technical implementation of the Akasha token bridge between Base and other networks using LayerZero's OFT (Omnichain Fungible Token) standard.
